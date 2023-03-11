@@ -1,0 +1,16 @@
+.botao{
+    background-color:  hsl(0, 94%, 66%);
+    color: white;
+    text-transform: uppercase;
+    padding: 8px 27px;
+    border-radius: 5px;
+    width: fit-content;
+    font-weight: 400;
+
+    &:hover{
+        background-color: transparent;
+        box-shadow: inset 0 0 0 1.5px  hsl(0, 94%, 66%);
+        color:  hsl(0, 94%, 66%); 
+    }
+    
+}

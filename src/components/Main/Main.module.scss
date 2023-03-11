@@ -1,0 +1,39 @@
+@import '../../styles/breakpoints';
+
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 7rem;
+ 
+    .text{
+        max-width: 590px;
+        margin: 0 auto;
+        text-align: center;
+
+        @media(max-width: $mobile-sm) {
+            padding: 0 0.7rem;    
+        } 
+    
+    }
+
+    p{
+        margin-top: 2.3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .info{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    
+    @media(max-width: $tablet) {
+        margin-top: 3rem;     
+    } 
+}

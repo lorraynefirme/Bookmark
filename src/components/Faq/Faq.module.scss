@@ -1,0 +1,32 @@
+@import '../../styles/breakpoints';
+
+.faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    .desc{
+        max-width: 770px;
+        text-align: center;
+         
+        h2{
+            margin-top: 5rem;
+            margin-bottom: 2rem; 
+            
+            @media(max-width: $mobile-sm) {
+                margin-top: 4rem;
+              }
+        } 
+
+        @media(max-width: $tablet) {
+            max-width: 560px;
+        }
+        
+        @media(max-width: $mobile-sm) {
+            max-width: 350px;
+            padding: 0 20px;
+        }   
+    } 
+}

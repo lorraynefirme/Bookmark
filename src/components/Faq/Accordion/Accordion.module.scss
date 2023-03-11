@@ -1,0 +1,63 @@
+@import '../../../styles/breakpoints';
+
+.accordion{
+    width: 50%;
+    margin: 2rem;
+    padding: 1rem;
+    
+    li:nth-child(1){
+        border-top: 1px solid hsl(229, 8%, 60%);
+    }
+
+    li{
+        border-bottom: 1px solid hsl(229, 8%, 60%);
+        padding: 1.5rem 0;
+
+        span{
+            font-weight: 500;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px 0 5px;
+          
+            .iconArrow{
+               font-size: 25px;
+            }
+
+            @media(max-width: $mobile-sm){
+                font-size: 1.1rem;
+            }
+        }
+
+        span:hover{
+            color: hsl(0, 94%, 66%);
+            cursor: pointer;
+        }
+
+        p{
+            display: none;
+            margin: 1rem 0;
+
+            @media(max-width: $mobile-sm){
+                font-size: 1.1rem;
+            }
+        } 
+    }
+
+    h4{
+        @media(max-width: $mobile-sm){
+            font-size: 1.1rem;
+        }
+    }
+  
+}
+
+.ativo{
+    display: block !important;
+}
+
+.ativoSpan{     
+    color: hsl(0, 94%, 66%)  !important;       
+}
+

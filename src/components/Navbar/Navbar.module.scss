@@ -1,0 +1,24 @@
+@import '../../styles/breakpoints';
+
+.header{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: hsl(229, 8%, 60%);
+    font-weight: 500;
+    padding: 0 3rem;
+   
+    a{
+        padding: 0.9rem;
+        cursor: pointer;
+    }
+
+}
+
+.logo{
+    margin-right: 15px;
+}

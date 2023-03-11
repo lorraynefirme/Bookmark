@@ -1,0 +1,79 @@
+@import '../../styles/breakpoints';
+
+
+.inicio{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 3rem;
+    padding-left: 3rem;
+    
+
+    .img {
+        max-width: 550px;
+        max-height: 400px;
+
+        @media(max-width: 1030px) {
+            max-width: 373px;
+        } 
+    }
+    
+    .texto{
+         max-width: 520px;
+         margin-right: 5rem;
+         flex-grow: 1;
+
+        @media(max-width: $tablet) {
+            margin-top: 2rem;
+            text-align: center;
+            width: 100%;
+        }
+
+        @media(max-width: $mobile-sm) {
+            h1{
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    p{
+        margin: 1.5rem 0;
+    }
+
+   
+    @media(max-width: $tablet) {
+        //background-color: red;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    @media(max-width: $mobile-sm) {
+        
+    }
+}
+
+.imagem{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;   
+    flex-grow: 2;     
+}
+
+.bgBlue{
+    background-color:  hsl(231, 69%, 60%);
+    width: 100%;
+    height: 230px;
+    border-bottom-left-radius: 15rem;
+    position: absolute;  
+    z-index: -2;
+    top: 40%;
+    right: 0;
+
+    @media(max-width: 1030px) {
+        height: 157px;
+    }
+    @media(max-width: $tablet) {
+        width: 400px
+    } 
+}
+

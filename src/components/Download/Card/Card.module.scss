@@ -1,0 +1,31 @@
+@import '../../../styles/breakpoints';
+
+.card{
+    width: 310px;
+    height: 370px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+    margin: 0 0.8rem;
+
+    img{
+        margin: 10px;
+    }
+
+           
+    .borderDotted{
+        text-align: center;
+        padding-bottom: 2rem;
+        width: 100%;
+        border-bottom: 7px dotted #e0dfdf;;
+    }
+
+    @media(max-width: $tablet){
+        margin-top: 1.7rem !important;
+    }
+}
+

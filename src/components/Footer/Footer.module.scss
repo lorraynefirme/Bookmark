@@ -1,0 +1,65 @@
+@import '../../styles/breakpoints';
+
+.footer{
+    background-color:  hsl(229, 31%, 21%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+
+    svg {
+        margin-right: 0.8rem;
+    
+        path{
+            fill: white;
+    
+            &:hover:hover {
+                fill:  hsl(0, 94%, 66%);
+            }
+        }
+    }
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18rem;
+
+    li{
+        padding: 0.8rem;
+
+        @media(max-width: $mobile-sm) {
+            font-size: 0.6rem;      
+        }
+    }
+  
+}
+
+.infos{
+    flex-grow: 2;
+}
+
+.social{
+    flex-grow: 1;
+}
+
+.socialItens{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    li{
+        margin: 6px;
+    }
+}
+
+
+
+
